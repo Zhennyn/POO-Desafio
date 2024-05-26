@@ -1,8 +1,17 @@
-public interface NavegadorInternet {
-    
-    public void exibirPagina(String url);
+public class NavegadorInternet {
 
-    public void adicionarNovaAba();
+    private String paginaAtual;
 
-    public void atualizarPagina();
+    public void exibirPagina(String url) {
+        this.paginaAtual = url;
+        System.out.println("Exibindo página: " + url);
+    }
+
+    public void adicionarNovaAba() {
+        System.out.println("Nova aba adicionada.");
+    }
+
+    public void atualizarPagina() {
+        System.out.println("Página atualizada.");
+    }
 }
